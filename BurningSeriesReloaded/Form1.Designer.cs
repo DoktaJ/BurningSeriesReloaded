@@ -43,6 +43,7 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.chkAutoplay = new System.Windows.Forms.CheckBox();
             this.delay = new System.Windows.Forms.Timer(this.components);
+            this.updateController1 = new updateSystemDotNet.updateController();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -164,6 +165,18 @@
             this.delay.Interval = 3000;
             this.delay.Tick += new System.EventHandler(this.delay_Tick);
             // 
+            // updateController1
+            // 
+            this.updateController1.applicationLocation = "";
+            this.updateController1.proxyPassword = null;
+            this.updateController1.proxyUrl = null;
+            this.updateController1.proxyUsername = null;
+            this.updateController1.releaseFilter.checkForAlpha = false;
+            this.updateController1.releaseFilter.checkForBeta = false;
+            this.updateController1.releaseFilter.checkForFinal = true;
+            this.updateController1.releaseInfo.Version = "";
+            this.updateController1.requestElevation = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,6 +217,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel4;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private updateSystemDotNet.updateController updateController1;
 
     }
 }
